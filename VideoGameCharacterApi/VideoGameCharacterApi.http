@@ -4,3 +4,36 @@ GET {{VideoGameCharacterApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET http://localhost:5235/api/VideoGameCharacters
+Accept: application/json
+
+###
+GET http://localhost:5235/api/VideoGameCharacters/4
+Accept: application/json
+
+###
+POST http://localhost:5235/api/VideoGameCharacters
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Mario",
+  "game": "Super Mario Bros",
+  "role": "Hero"
+}
+
+###
+PUT http://localhost:5235/api/VideoGameCharacters/6
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "name": "Luigi",
+  "game": "Super Mario Bros",
+  "role": "Sidekick"
+}
+
+###
+DELETE http://localhost:5235/api/VideoGameCharacters/6
+Accept: application/json
